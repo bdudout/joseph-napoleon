@@ -45,17 +45,23 @@
 
   <h2>The starting point</h2>
   <p>The cryptogram is listed by S. Tomokiyo on Cryptiana, with a transcription of its 22 lines [<a href="sources.html#s2">2</a>, <a href="sources.html#s3">3</a>], and appeared in the list of unsolved ciphers published by Daniel Bourdeau [<a href="sources.html#s4">4</a>]. The source is a 1969 article by Lieutenant-Colonel J. Vilcoq, “Le chiffre sous le Premier Empire” [<a href="sources.html#s1">1</a>], one plate of which reproduces page 3 of the dispatch.</p>
-  <p>The published text has 325 groups, numbers from 2 to 1,388, of which 207 are distinct; 132 occur only once. That is the profile of a <em>great cipher</em>: a nomenclator of about a thousand entries (letters, syllables, words, names), with several numbers for frequent words. Without the table, so short a text cannot be broken by frequency analysis: the nomenclator has to be found.</p>
+  <p>The published text has 325 groups, numbers from 2 to 1,388, of which 207 are distinct; 134 occur only once (in the re-read text, see below). That is the profile of a <em>great cipher</em>: a nomenclator of about a thousand entries (letters, syllables, words, names), with several numbers for frequent words. Without the table, so short a text cannot be broken by frequency analysis: the nomenclator has to be found.</p>
 
   <h2>The tables tried first</h2>
   <p>I started with the great ciphers of the Empire transcribed by Tant and published by the ARCSI [<a href="sources.html#s6">6</a>]: three “unknown codes” of 1,200 entries and two “Napoleonic codes”. Applied to the 325 groups, they give strings of unrelated words (“exact, maréchal, gus, bien, heureux…”), and none matches the known values of the 1812–1813 codes collected by Tomokiyo [<a href="sources.html#s2">2</a>]. Negative result.</p>
 
   <h2>The Great Cipher of 1812</h2>
   <p>Tomokiyo notes that Berthier was among the users of the Great Cipher issued in Spain in 1811–1812, a nomenclator of 1,200 groups later extended to 1,400 [<a href="sources.html#s2">2</a>]. The cryptogram goes above 1,200 only three times. Jean-François Bouchaudy photographed the <strong>deciphering table</strong> of this code, kept at the Service historique de la Défense (shelfmark “B n° 30”) [<a href="sources.html#s5">5</a>]: a large folded sheet in which each number from 1 to 1,400 is followed by its value.</p>
-  <figure>
-    <img src="../assets/img/table-1812-extrait.jpg" width="1352" height="434" alt="Three cells of the 1812 table: 911 to 920 (918 je), 1101 to 1110 (1105 Votre), 541 to 550 (544 de).">
-    <figcaption>Three cells of the table: 918 = “je” (I), 1105 = “Votre” (Your), 544 = “de” (of). Photographs J.-F. Bouchaudy, Service historique de la Défense [<a href="sources.html#s5">5</a>].</figcaption>
-  </figure>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Group</th><th>Table entry (original spelling)</th><th>Value used</th></tr></thead>
+    <tbody>
+      <tr><td><code>918</code></td><td lang="fr">je</td><td>je (I)</td></tr>
+      <tr><td><code>1105</code></td><td lang="fr">Votre, s</td><td>Votre (Your)</td></tr>
+      <tr><td><code>359</code></td><td lang="fr">Nouveau, x, elles</td><td>nouvelles (news)</td></tr>
+      <tr><td><code>1238</code></td><td lang="fr">l'armée du nord de l'Espagne</td><td>the Army of the North of Spain</td></tr>
+    </tbody>
+  </table></div>
+  <p class="legend">Four table entries as we read them on J.-F. Bouchaudy's photographs (Service historique de la Défense, “B n° 30”) [<a href="sources.html#s5">5</a>]; the photographs can be consulted on his site.</p>
   <p>I located the grid on the photographs, cut out the cells containing the 207 values of the cryptogram, and read each entry. From the first line on, the text is French: <code>918 je · 1045 n · 1100 ait · 493 aucun · 359 nouvelles · 989 de · 1105 Votre · 73 Majesté · 710 de · 432 puis · 118 so · 718 n · 544 de · 810 part · 1060 de · 1135 pa · 1122 ri · 173 s · 666 ;</code>, that is “Je n'ai aucunes nouvelles de Votre Majesté depuis son départ de Paris ;” (I have had no news from Your Majesty since your departure from Paris). The groups added for Spain above 1,200 fit: 1202 = Valladolid, 1238 = “the Army of the North of Spain”, 1388 = Salamanca.</p>
 
   <h2>The control: it is not an illusion</h2>
@@ -89,7 +95,7 @@
   </ul>
 
   <h2>Reproducing</h2>
-  <p>The <a href="https://github.com/bdudout/joseph-napoleon/tree/main/data"><code>data/</code></a> folder of the repository contains the cryptogram as re-read from the plate, the 226 table entries read for this work (in the table's own spelling) and the line-by-line reading; <a href="https://github.com/bdudout/joseph-napoleon/tree/main/analysis"><code>analysis/</code></a> contains the decoding and the permutation control. The photographs of the table are not redistributed (only the extract above illustrates the method): they can be consulted on J.-F. Bouchaudy's site [<a href="sources.html#s5">5</a>].</p>
+  <p>The <a href="https://github.com/bdudout/joseph-napoleon/tree/main/data"><code>data/</code></a> folder of the repository contains the cryptogram as re-read from the plate, the 226 table entries read for this work (in the table's own spelling) and the line-by-line reading; <a href="https://github.com/bdudout/joseph-napoleon/tree/main/analysis"><code>analysis/</code></a> contains the decoding and the permutation control. The photographs of the table are not redistributed: they can be consulted on J.-F. Bouchaudy's site [<a href="sources.html#s5">5</a>].</p>
 </article>
 </main>
 

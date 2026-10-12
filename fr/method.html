@@ -45,17 +45,23 @@
 
   <h2>Le point de départ</h2>
   <p>Le cryptogramme est recensé par S. Tomokiyo sur Cryptiana, avec une transcription de ses 22 lignes [<a href="sources.html#s2">2</a>, <a href="sources.html#s3">3</a>], et figurait dans la liste des chiffres non résolus publiée par Daniel Bourdeau [<a href="sources.html#s4">4</a>]. La source est un article de 1969 du lieutenant-colonel J. Vilcoq, « Le chiffre sous le Premier Empire » [<a href="sources.html#s1">1</a>], dont une planche reproduit la page 3 de la dépêche.</p>
-  <p>Le texte publié compte 325 groupes, des nombres de 2 à 1 388, dont 207 différents ; 132 n'apparaissent qu'une fois. C'est le profil d'un <em>grand chiffre</em> : un répertoire d'un millier d'entrées (lettres, syllabes, mots, noms), avec plusieurs nombres pour les mots fréquents. Sans la table, un texte aussi court ne se casse pas par l'analyse de fréquences : il faut retrouver le répertoire.</p>
+  <p>Le texte publié compte 325 groupes, des nombres de 2 à 1 388, dont 207 différents ; 134 n'apparaissent qu'une fois (sur le texte relu, voir plus bas). C'est le profil d'un <em>grand chiffre</em> : un répertoire d'un millier d'entrées (lettres, syllabes, mots, noms), avec plusieurs nombres pour les mots fréquents. Sans la table, un texte aussi court ne se casse pas par l'analyse de fréquences : il faut retrouver le répertoire.</p>
 
   <h2>Les tables essayées d'abord</h2>
   <p>J'ai commencé par les grands chiffres de l'Empire transcrits par Tant et publiés par l'ARCSI [<a href="sources.html#s6">6</a>] : trois « codes inconnus » de 1 200 entrées et deux « codes napoléoniens ». Appliqués aux 325 groupes, ils donnent des suites de mots sans rapport (« exact, maréchal, gus, bien, heureux… »), et aucun ne correspond aux valeurs connues des codes de 1812–1813 relevées par Tomokiyo [<a href="sources.html#s2">2</a>]. Résultat négatif.</p>
 
   <h2>Le Grand Chiffre de 1812</h2>
   <p>Tomokiyo rappelle que Berthier figurait parmi les utilisateurs du Grand Chiffre distribué en Espagne en 1811–1812, un répertoire de 1 200 groupes porté à 1 400 [<a href="sources.html#s2">2</a>]. Or le cryptogramme ne dépasse 1 200 que trois fois. Jean-François Bouchaudy a photographié la <strong>table de déchiffrement</strong> de ce code, conservée au Service historique de la Défense (cote « B n° 30 ») [<a href="sources.html#s5">5</a>] : un grand tableau plié, où chaque nombre de 1 à 1 400 est suivi de sa valeur.</p>
-  <figure>
-    <img src="../assets/img/table-1812-extrait.jpg" width="1352" height="434" alt="Trois cases de la table de 1812 : 911 à 920 (918 je), 1101 à 1110 (1105 Votre), 541 à 550 (544 de).">
-    <figcaption>Trois cases de la table : 918 = « je », 1105 = « Votre », 544 = « de ». Photographies J.-F. Bouchaudy, Service historique de la Défense [<a href="sources.html#s5">5</a>].</figcaption>
-  </figure>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Groupe</th><th>Entrée de la table (graphie originale)</th><th>Valeur retenue</th></tr></thead>
+    <tbody>
+      <tr><td><code>918</code></td><td>je</td><td>je</td></tr>
+      <tr><td><code>1105</code></td><td>Votre, s</td><td>Votre</td></tr>
+      <tr><td><code>359</code></td><td>Nouveau, x, elles</td><td>nouvelles</td></tr>
+      <tr><td><code>1238</code></td><td>l'armée du nord de l'Espagne</td><td>l'armée du Nord de l'Espagne</td></tr>
+    </tbody>
+  </table></div>
+  <p class="legend">Quatre entrées de la table telles que nous les lisons sur les photographies de J.-F. Bouchaudy (Service historique de la Défense, « B n° 30 ») [<a href="sources.html#s5">5</a>] ; les photographies sont consultables sur son site.</p>
   <p>J'ai repéré la grille sur les photographies, découpé les cases contenant les 207 valeurs du cryptogramme et lu chaque entrée. Dès la première ligne, le texte est du français : <code>918 je · 1045 n · 1100 ait · 493 aucun · 359 nouvelles · 989 de · 1105 Votre · 73 Majesté · 710 de · 432 puis · 118 so · 718 n · 544 de · 810 part · 1060 de · 1135 pa · 1122 ri · 173 s · 666 ;</code>, soit « Je n'ai aucunes nouvelles de Votre Majesté depuis son départ de Paris ; ». Les groupes ajoutés pour l'Espagne au-delà de 1 200 tombent juste : 1202 = Valladolid, 1238 = « l'armée du Nord de l'Espagne », 1388 = Salamanque.</p>
 
   <h2>Le contrôle : ce n'est pas une illusion</h2>
@@ -89,7 +95,7 @@
   </ul>
 
   <h2>Reproduire</h2>
-  <p>Le dossier <a href="https://github.com/bdudout/joseph-napoleon/tree/main/data"><code>data/</code></a> du dépôt contient le cryptogramme relu sur la planche, les 226 entrées de la table lues pour ce travail (avec la graphie de la table) et la lecture ligne à ligne ; <a href="https://github.com/bdudout/joseph-napoleon/tree/main/analysis"><code>analysis/</code></a> contient le décodage et le contrôle par permutations. Les photographies de la table ne sont pas redistribuées (seul l'extrait ci-dessus illustre la méthode) : elles sont consultables sur le site de J.-F. Bouchaudy [<a href="sources.html#s5">5</a>].</p>
+  <p>Le dossier <a href="https://github.com/bdudout/joseph-napoleon/tree/main/data"><code>data/</code></a> du dépôt contient le cryptogramme relu sur la planche, les 226 entrées de la table lues pour ce travail (avec la graphie de la table) et la lecture ligne à ligne ; <a href="https://github.com/bdudout/joseph-napoleon/tree/main/analysis"><code>analysis/</code></a> contient le décodage et le contrôle par permutations. Les photographies de la table ne sont pas redistribuées : elles sont consultables sur le site de J.-F. Bouchaudy [<a href="sources.html#s5">5</a>].</p>
 </article>
 </main>
 
