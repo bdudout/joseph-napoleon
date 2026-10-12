@@ -403,7 +403,7 @@ body.has-ftoc .site-footer { padding-bottom: 4.5rem; }
 /* ---------- La lettre chiffrée du roi Joseph : ajouts ---------- */
 .brand .seal.seal-j { font-family: var(--serif); font-weight: 700; font-size: 1.05rem; }
 .chooser .big-num { font: 600 4.2rem/1 var(--serif); color: var(--accent); margin: 0 0 1rem; letter-spacing: .04em; }
-.hero .big-num { font: 600 clamp(2.6rem, 7vw, 4.2rem)/1 var(--serif); color: var(--accent); margin: 0 0 .6rem; letter-spacing: .04em; }
+.hero .big-num { white-space: nowrap; font: 600 clamp(1.8rem, 4.2vw, 3rem)/1 var(--serif); color: var(--accent); margin: 0 0 .6rem; letter-spacing: .04em; }
 table.letter { font-size: .9rem; }
 table.letter td { vertical-align: top; padding: .45rem .5rem; border-bottom: 1px solid var(--rule); }
 table.letter td.ln { color: var(--muted); font-variant-numeric: tabular-nums; width: 2.5rem; }
@@ -420,3 +420,4 @@ table.letter td.rd { min-width: 16rem; font-style: italic; color: var(--ink-2); 
 .legend .tok { vertical-align: middle; }
 .plain-letter { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; margin: 1.4rem 0; }
 .plain-letter p { margin: 0 0 .8rem; }
+.table-wrap.wide { margin-left: calc(50% - min(34rem, 50vw - 1rem)); margin-right: calc(50% - min(34rem, 50vw - 1rem)); }

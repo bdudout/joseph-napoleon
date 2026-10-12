@@ -17,7 +17,7 @@ def letter_table(lang):
     tab = json.load(open(d('table-1812-entrees.json'), encoding='utf-8'))
     lec = json.load(open(d('lecture.json'), encoding='utf-8'))
     L = T[lang]
-    out = ['<div class="table-wrap"><table class="letter"><thead><tr><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>'
+    out = ['<div class="table-wrap wide"><table class="letter"><thead><tr><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>'
            % (L['line'], L['groups'], L['reading'])]
     for i, groups in enumerate(lines, 1):
         toks = []

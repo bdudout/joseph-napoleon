@@ -17,6 +17,11 @@ Trois pages, en français et en anglais :
    planche de 1969 (8 groupes corrigés), la lettre sœur ;
 3. **La lettre** — les 325 groupes ligne à ligne avec leur valeur dans la table, le texte suivi et sa traduction.
 
+**Priorité** : la clé (Grand Chiffre de Paris) et l'auteur (le roi Joseph) ont été identifiés en premier par **Ilia Chirtulov**
+(résultat reçu par S. Tomokiyo le 4 octobre 2026, signalé sur [Cryptiana](https://cryptiana.web.fc2.com/code/unsolved.htm)
+le 12 octobre 2026). Ce site est une relecture indépendante qui ajoute la lecture complète ligne à ligne, la relecture du
+chiffré sur la planche de 1969 (8 groupes corrigés), un contrôle par permutations et la lettre sœur du 23 décembre 1812.
+
 Ce travail part du cryptogramme recensé par **S. Tomokiyo** sur [Cryptiana](https://cryptiana.web.fc2.com/code/napoleon2.htm)
 et de la liste publiée par **Daniel Bourdeau** ([dbourdeau/cyphersolver](https://github.com/dbourdeau/cyphersolver), CC BY 4.0).
 La table du Grand Chiffre a été lue sur les photographies publiées par **Jean-François Bouchaudy**
