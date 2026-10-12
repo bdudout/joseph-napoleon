@@ -1,0 +1,57 @@
+<!-- {"title": "Finding the key: from unknown codes to the Great Cipher of 1812", "description": "How the cryptogram known as “Berthier, 22 December 1812” was read: tables tried, the table of the Great Cipher of 1812, permutation control, re-reading of the 1969 plate, sister letter."} -->
+<article class="article">
+  <header class="lede">
+    <p class="kicker">Article 2 · Method</p>
+    <h1>Finding the key: from unknown codes to the Great Cipher of 1812</h1>
+    <p class="standfirst">No clever cryptanalysis here: the right table existed, photographed and published online. It had to be tried, read entry by entry, checked to make sure the result is not an illusion, and the text compared with other sources.</p>
+    <p class="byline">Brice Dudout, with Claude (Anthropic) · 12 October 2026</p>
+  </header>
+
+  <h2>The starting point</h2>
+  <p>The cryptogram is listed by S. Tomokiyo on Cryptiana, with a transcription of its 22 lines [<a href="sources.html#s2">2</a>, <a href="sources.html#s3">3</a>], and appears in the list of unsolved ciphers published by Daniel Bourdeau [<a href="sources.html#s4">4</a>]. The source is a 1969 article by Lieutenant-Colonel J. Vilcoq, “Le chiffre sous le Premier Empire” [<a href="sources.html#s1">1</a>], one plate of which reproduces page 3 of the dispatch.</p>
+  <p>The published text has 325 groups, numbers from 2 to 1,388, of which 207 are distinct; 132 occur only once. That is the profile of a <em>great cipher</em>: a nomenclator of about a thousand entries (letters, syllables, words, names), with several numbers for frequent words. Without the table, so short a text cannot be broken by frequency analysis: the nomenclator has to be found.</p>
+
+  <h2>The tables tried first</h2>
+  <p>I started with the great ciphers of the Empire transcribed by Tant and published by the ARCSI [<a href="sources.html#s6">6</a>]: three “unknown codes” of 1,200 entries and two “Napoleonic codes”. Applied to the 325 groups, they give strings of unrelated words (“exact, maréchal, gus, bien, heureux…”), and none matches the known values of the 1812–1813 codes collected by Tomokiyo [<a href="sources.html#s2">2</a>]. Negative result.</p>
+
+  <h2>The Great Cipher of 1812</h2>
+  <p>Tomokiyo notes that Berthier was among the users of the Great Cipher issued in Spain in 1811–1812, a nomenclator of 1,200 groups later extended to 1,400 [<a href="sources.html#s2">2</a>]. The cryptogram goes above 1,200 only three times. Jean-François Bouchaudy photographed the <strong>deciphering table</strong> of this code, kept at the Service historique de la Défense (shelfmark “B n° 30”) [<a href="sources.html#s5">5</a>]: a large folded sheet in which each number from 1 to 1,400 is followed by its value.</p>
+  <figure>
+    <img src="../assets/img/table-1812-extrait.jpg" width="1352" height="434" alt="Three cells of the 1812 table: 911 to 920 (918 je), 1101 to 1110 (1105 Votre), 541 to 550 (544 de).">
+    <figcaption>Three cells of the table: 918 = “je” (I), 1105 = “Votre” (Your), 544 = “de” (of). Photographs J.-F. Bouchaudy, Service historique de la Défense [<a href="sources.html#s5">5</a>].</figcaption>
+  </figure>
+  <p>I located the grid on the photographs, cut out the cells containing the 207 values of the cryptogram, and read each entry. From the first line on, the text is French: <code>918 je · 1045 n · 1100 ait · 493 aucun · 359 nouvelles · 989 de · 1105 Votre · 73 Majesté · 710 de · 432 puis · 118 so · 718 n · 544 de · 810 part · 1060 de · 1135 pa · 1122 ri · 173 s · 666 ;</code>, that is “Je n'ai aucunes nouvelles de Votre Majesté depuis son départ de Paris ;” (I have had no news from Your Majesty since your departure from Paris). The groups added for Spain above 1,200 fit: 1202 = Valladolid, 1238 = “the Army of the North of Spain”, 1388 = Salamanca.</p>
+
+  <h2>The control: it is not an illusion</h2>
+  <p>A “readable” text can arise from too accommodating a choice of values. So I measured, with a language model built on an independent text (Berthier's letters of December 1812 printed by Chuquet [<a href="sources.html#s10">10</a>]), how French the decoded text is, then did the same for 1,000 decodings obtained by shuffling the numbers of the same table. Result: −2.11 per character for the real table, against −2.63 on average and −2.43 at best for the shuffled tables; <strong>none</strong> of the 1,000 matches it. Tant's tables give −2.72 to −2.82. The homophones expected of a great cipher also appear: “de” is written 13, 544, 710, 989 or 1060; “que” 69, 607 or 893.</p>
+
+  <h2>Re-reading the cipher on the 1969 plate</h2>
+  <p>The online transcription [<a href="sources.html#s2">2</a>, <a href="sources.html#s3">3</a>] left a few gaps in the text. Vilcoq's plate is digitised in high resolution by Persée [<a href="sources.html#s1">1</a>]: re-read group by group, it differs from the transcription in <strong>8 groups</strong>, and each correction makes the passage clear.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Line</th><th>Online transcription</th><th>1969 plate</th><th>Value</th><th>Effect</th></tr></thead>
+    <tbody>
+      <tr><td>8</td><td>1110</td><td>1113</td><td>été</td><td>« ayant été enlevé » (having been seized)</td></tr>
+      <tr><td>9</td><td>1030</td><td>1063</td><td>dépêche</td><td>« copie d'une dépêche » (copy of a dispatch)</td></tr>
+      <tr><td>9</td><td>690</td><td>693</td><td>mon</td><td>« de Monsieur »</td></tr>
+      <tr><td>11</td><td>960</td><td>963</td><td>ec</td><td>« pièce » (p-i-ec-e, document)</td></tr>
+      <tr><td>12</td><td>713</td><td>718</td><td>n</td><td>« genre » (ge-n-re, kind)</td></tr>
+      <tr><td>13</td><td>605</td><td>635</td><td>province</td><td>« la position des provinces du Nord »</td></tr>
+      <tr><td>20</td><td>1068</td><td>1066</td><td>vo</td><td>« voici » (vo-ici, here is)</td></tr>
+      <tr><td>21</td><td>460</td><td>463</td><td>votre</td><td>« à Votre Majesté »</td></tr>
+    </tbody>
+  </table></div>
+  <p>The plate also shows that the published part is limited to this page 3: it ends on “Votre Majesté”. Two groups are written on it as transcribed but do not fit the sense: 356 (“préjudice”) where “quelles qu'aient été” (whatever) requires 656 (“quel”), and 325 (“paix”) where a full stop (225) would fit. These are probably slips by the encoder or by the copyist of the duplicate, a 3 for a 6 or for a 2.</p>
+
+  <h2>The sister letter</h2>
+  <p>The text describes a king in Spain: it cannot be Berthier's (see <a href="history.html">the history</a>). Volume IX of King Joseph's <i>Mémoires et correspondance</i> [<a href="sources.html#s7">7</a>] does not contain the cipher letter to the Emperor, but it does contain a letter from Joseph to the Minister of War dated Madrid, 23 December 1812, on the same subject and with the same phrases (the enclosed copy of Reille's letter, “I knew well… but I did not believe it in so bad a state”, the lack of strength returns from the Army of the North). This is an independent confirmation of our decipherment: not a word-for-word collation, since it is another letter, but the overlaps are too precise to be chance.</p>
+
+  <h2>What remains uncertain</h2>
+  <ul>
+    <li>Groups <code>851</code> and <code>1051</code> fall on a fold of the table and are illegible in both available photographs. 1051 = “ité” is required by “réitérées” (repeated); for 851, “ni compte, ni rapport” (neither account nor report) is only a hypothesis (<code>559</code> reads “Compagnie” in the table).</li>
+    <li>A few table entries are hard to read and fit the word only imperfectly: <code>495</code> (“car” for the “cen” of “concentration”), <code>320</code> (“C” for the “t” of “exigeât”), <code>1086</code> (“sous”).</li>
+    <li>The exact date and the shelfmark: the 1969 caption gives 22 December 1812 and the Archives nationales. According to the inventory of series AF/IV [<a href="sources.html#s9">9</a>], the letter would be among King Joseph's correspondence with the Emperor, <mark class="unc">probably AF/IV/1634 (plaquette 1, January 1813) or AF/IV/1633 (plaquette 2, 1812)</mark>. Pages 1–2 and the rest of the letter have not been seen.</li>
+  </ul>
+
+  <h2>Reproducing</h2>
+  <p>The <a href="https://github.com/bdudout/joseph-napoleon/tree/main/data"><code>data/</code></a> folder of the repository contains the cryptogram as re-read from the plate, the 226 table entries read for this work (in the table's own spelling) and the line-by-line reading; <a href="https://github.com/bdudout/joseph-napoleon/tree/main/analysis"><code>analysis/</code></a> contains the decoding and the permutation control. The photographs of the table are not redistributed (only the extract above illustrates the method): they can be consulted on J.-F. Bouchaudy's site [<a href="sources.html#s5">5</a>].</p>
+</article>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trouver la clé : du code inconnu au Grand Chiffre de 1812</title>
+<meta name="description" content="Comment le cryptogramme dit « Berthier, 22 décembre 1812 » a été lu : tables essayées, table du Grand Chiffre de 1812, contrôle par permutations, relecture sur la planche de 1969, lettre sœur.">
+<link rel="alternate" hreflang="fr" href="../fr/method.html">
+<link rel="alternate" hreflang="en" href="../en/method.html">
+<link rel="stylesheet" href="../assets/css/style.css?v=4579325e3d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%239b2c1f'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='%23f7f3ea' font-family='serif'%3EJ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header"><div class="inner">
+  <a class="brand" href="index.html"><span class="seal seal-j">J</span> La lettre chiffrée du roi Joseph</a>
+  <nav class="menu">
+    <a href="index.html">Accueil</a>
+    <a href="history.html">L'histoire</a>
+    <a href="method.html" aria-current="page">La méthode</a>
+    <a href="letter.html">La lettre</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+  <nav class="lang-switch" aria-label="Langue">
+    <details>
+      <summary title="Langue" aria-label="Langue — Français"><img class="flag" src="../assets/img/flags/fr.svg" width="20" height="15" alt=""><span class="lc">FR</span></summary>
+      <ul>
+        <li><a href="../fr/method.html" hreflang="fr" lang="fr" data-lang="fr" aria-current="true"><img class="flag" src="../assets/img/flags/fr.svg" width="20" height="15" alt=""><span>Français</span></a></li>
+        <li><a href="../en/method.html" hreflang="en" lang="en" data-lang="en"><img class="flag" src="../assets/img/flags/gb.svg" width="20" height="15" alt=""><span>English</span></a></li>
+      </ul>
+    </details>
+  </nav>
+  <button class="theme-toggle" type="button" aria-label="Basculer le thème clair/sombre">◐</button>
+</div></header>
+
+<main>
+<article class="article">
+  <header class="lede">
+    <p class="kicker">Article 2 · Méthode</p>
+    <h1>Trouver la clé : des codes inconnus au Grand Chiffre de 1812</h1>
+    <p class="standfirst">Aucune cryptanalyse savante ici : la bonne table existait, photographiée et publiée en ligne. Il fallait l'essayer, la lire case par case, vérifier que le résultat n'est pas une illusion, puis confronter le texte à d'autres sources.</p>
+    <p class="byline">Brice Dudout, avec Claude (Anthropic) · 12 octobre 2026</p>
+  </header>
+
+  <h2>Le point de départ</h2>
+  <p>Le cryptogramme est recensé par S. Tomokiyo sur Cryptiana, avec une transcription de ses 22 lignes [<a href="sources.html#s2">2</a>, <a href="sources.html#s3">3</a>], et figure dans la liste des chiffres non résolus publiée par Daniel Bourdeau [<a href="sources.html#s4">4</a>]. La source est un article de 1969 du lieutenant-colonel J. Vilcoq, « Le chiffre sous le Premier Empire » [<a href="sources.html#s1">1</a>], dont une planche reproduit la page 3 de la dépêche.</p>
+  <p>Le texte publié compte 325 groupes, des nombres de 2 à 1 388, dont 207 différents ; 132 n'apparaissent qu'une fois. C'est le profil d'un <em>grand chiffre</em> : un répertoire d'un millier d'entrées (lettres, syllabes, mots, noms), avec plusieurs nombres pour les mots fréquents. Sans la table, un texte aussi court ne se casse pas par l'analyse de fréquences : il faut retrouver le répertoire.</p>
+
+  <h2>Les tables essayées d'abord</h2>
+  <p>J'ai commencé par les grands chiffres de l'Empire transcrits par Tant et publiés par l'ARCSI [<a href="sources.html#s6">6</a>] : trois « codes inconnus » de 1 200 entrées et deux « codes napoléoniens ». Appliqués aux 325 groupes, ils donnent des suites de mots sans rapport (« exact, maréchal, gus, bien, heureux… »), et aucun ne correspond aux valeurs connues des codes de 1812–1813 relevées par Tomokiyo [<a href="sources.html#s2">2</a>]. Résultat négatif.</p>
+
+  <h2>Le Grand Chiffre de 1812</h2>
+  <p>Tomokiyo rappelle que Berthier figurait parmi les utilisateurs du Grand Chiffre distribué en Espagne en 1811–1812, un répertoire de 1 200 groupes porté à 1 400 [<a href="sources.html#s2">2</a>]. Or le cryptogramme ne dépasse 1 200 que trois fois. Jean-François Bouchaudy a photographié la <strong>table de déchiffrement</strong> de ce code, conservée au Service historique de la Défense (cote « B n° 30 ») [<a href="sources.html#s5">5</a>] : un grand tableau plié, où chaque nombre de 1 à 1 400 est suivi de sa valeur.</p>
+  <figure>
+    <img src="../assets/img/table-1812-extrait.jpg" width="1352" height="434" alt="Trois cases de la table de 1812 : 911 à 920 (918 je), 1101 à 1110 (1105 Votre), 541 à 550 (544 de).">
+    <figcaption>Trois cases de la table : 918 = « je », 1105 = « Votre », 544 = « de ». Photographies J.-F. Bouchaudy, Service historique de la Défense [<a href="sources.html#s5">5</a>].</figcaption>
+  </figure>
+  <p>J'ai repéré la grille sur les photographies, découpé les cases contenant les 207 valeurs du cryptogramme et lu chaque entrée. Dès la première ligne, le texte est du français : <code>918 je · 1045 n · 1100 ait · 493 aucun · 359 nouvelles · 989 de · 1105 Votre · 73 Majesté · 710 de · 432 puis · 118 so · 718 n · 544 de · 810 part · 1060 de · 1135 pa · 1122 ri · 173 s · 666 ;</code>, soit « Je n'ai aucunes nouvelles de Votre Majesté depuis son départ de Paris ; ». Les groupes ajoutés pour l'Espagne au-delà de 1 200 tombent juste : 1202 = Valladolid, 1238 = « l'armée du Nord de l'Espagne », 1388 = Salamanque.</p>
+
+  <h2>Le contrôle : ce n'est pas une illusion</h2>
+  <p>Un texte « lisible » peut naître d'un choix trop complaisant des valeurs. J'ai donc mesuré, avec un modèle de langue construit sur un texte indépendant (les lettres de Berthier de décembre 1812 imprimées par Chuquet [<a href="sources.html#s10">10</a>]), la vraisemblance en français du texte décodé, puis celle de 1 000 décodages obtenus en mélangeant les numéros de la même table. Résultat : −2,11 par caractère pour la vraie table, contre −2,63 en moyenne et −2,43 au mieux pour les tables mélangées ; <strong>aucune</strong> des 1 000 ne l'égale. Les tables de Tant donnent −2,72 à −2,82. Les homophones attendus d'un grand chiffre apparaissent aussi : « de » s'écrit 13, 544, 710, 989 ou 1060 ; « que » 69, 607 ou 893.</p>
+
+  <h2>Relire le chiffré sur la planche de 1969</h2>
+  <p>La transcription en ligne [<a href="sources.html#s2">2</a>, <a href="sources.html#s3">3</a>] laissait quelques trous dans le texte. La planche de Vilcoq est numérisée en haute définition par Persée [<a href="sources.html#s1">1</a>] : relue groupe par groupe, elle diffère de la transcription en <strong>8 groupes</strong>, et chaque correction rend le passage limpide.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Ligne</th><th>Transcription en ligne</th><th>Planche de 1969</th><th>Valeur</th><th>Effet</th></tr></thead>
+    <tbody>
+      <tr><td>8</td><td>1110</td><td>1113</td><td>été</td><td>« ayant été enlevé »</td></tr>
+      <tr><td>9</td><td>1030</td><td>1063</td><td>dépêche</td><td>« copie d'une dépêche »</td></tr>
+      <tr><td>9</td><td>690</td><td>693</td><td>mon</td><td>« de Monsieur »</td></tr>
+      <tr><td>11</td><td>960</td><td>963</td><td>ec</td><td>« pièce » (p-i-ec-e)</td></tr>
+      <tr><td>12</td><td>713</td><td>718</td><td>n</td><td>« genre » (ge-n-re)</td></tr>
+      <tr><td>13</td><td>605</td><td>635</td><td>province</td><td>« la position des provinces du Nord »</td></tr>
+      <tr><td>20</td><td>1068</td><td>1066</td><td>vo</td><td>« voici » (vo-ici)</td></tr>
+      <tr><td>21</td><td>460</td><td>463</td><td>votre</td><td>« à Votre Majesté »</td></tr>
+    </tbody>
+  </table></div>
+  <p>La planche montre aussi que la partie publiée se limite à cette page 3 : elle s'arrête sur « Votre Majesté ». Deux groupes y sont bien écrits comme transcrits, mais ne conviennent pas au sens : 356 (« préjudice ») là où « quelles qu'aient été » demande 656 (« quel »), et 325 (« paix ») là où un point (225) conviendrait. Ce sont probablement des fautes du chiffreur ou du copiste du duplicata, 3 pour 6 ou pour 2.</p>
+
+  <h2>La lettre sœur</h2>
+  <p>Le texte décrit un roi en Espagne : il ne peut pas être de Berthier (voir <a href="history.html">l'histoire</a>). Le tome IX des <i>Mémoires et correspondance</i> du roi Joseph [<a href="sources.html#s7">7</a>] ne contient pas la lettre chiffrée à l'Empereur, mais une lettre de Joseph au ministre de la Guerre datée de Madrid le 23 décembre 1812, sur le même sujet et avec les mêmes formules (la copie de la lettre de Reille jointe, « je savais bien… mais je ne les croyais pas en si mauvais état », l'absence d'états de situation de l'armée du Nord). C'est une confirmation indépendante de notre déchiffrement : ce n'est pas une collation mot à mot, puisqu'il s'agit d'une autre lettre, mais les recoupements sont trop précis pour être fortuits.</p>
+
+  <h2>Ce qui reste incertain</h2>
+  <ul>
+    <li>Le groupe <code>851</code> et le groupe <code>1051</code> tombent sur une pliure de la table, illisibles sur les deux photographies disponibles. 1051 = « ité » est imposé par « réitérées » ; pour 851, « ni compte, ni rapport » n'est qu'une hypothèse (<code>559</code> se lit « Compagnie » dans la table).</li>
+    <li>Quelques entrées de la table se lisent mal et ne s'accordent au mot qu'imparfaitement : <code>495</code> (« car » pour « cen » de « concentration »), <code>320</code> (« C » pour le « t » d'« exigeât »), <code>1086</code> (« sous »).</li>
+    <li>La date exacte et la cote : la légende de 1969 indique le 22 décembre 1812 et les Archives nationales. D'après le répertoire de la série AF/IV [<a href="sources.html#s9">9</a>], la lettre se trouverait parmi la correspondance du roi Joseph à l'Empereur, <mark class="unc">probablement AF/IV/1634 (plaquette 1, janvier 1813) ou AF/IV/1633 (plaquette 2, 1812)</mark>. Les pages 1–2 et la suite de la lettre n'ont pas été vues.</li>
+  </ul>
+
+  <h2>Reproduire</h2>
+  <p>Le dossier <a href="https://github.com/bdudout/joseph-napoleon/tree/main/data"><code>data/</code></a> du dépôt contient le cryptogramme relu sur la planche, les 226 entrées de la table lues pour ce travail (avec la graphie de la table) et la lecture ligne à ligne ; <a href="https://github.com/bdudout/joseph-napoleon/tree/main/analysis"><code>analysis/</code></a> contient le décodage et le contrôle par permutations. Les photographies de la table ne sont pas redistribuées (seul l'extrait ci-dessus illustre la méthode) : elles sont consultables sur le site de J.-F. Bouchaudy [<a href="sources.html#s5">5</a>].</p>
+</article>
+</main>
+
+<footer class="site-footer"><div class="inner">
+  © 2026 Brice Dudout, avec Claude (Anthropic). Textes, données et code : <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a> (exceptions : <a href="https://github.com/bdudout/joseph-napoleon/blob/main/NOTICE.md">NOTICE</a>). Cryptogramme : planche de J. Vilcoq, <i>Revue historique des Armées</i>, 1969 (Persée), d'après l'original des Archives nationales. Table du Grand Chiffre : photographies de J.-F. Bouchaudy (Service historique de la Défense). Travaux antérieurs : S. Tomokiyo (Cryptiana) ; Daniel Bourdeau (CC BY 4.0). <a href="sources.html">Toutes les sources</a>. Contact : <a href="https://www.linkedin.com/in/brice-dudout" rel="author noopener">LinkedIn</a>.
+</div></footer>
+<script src="../assets/js/site.js?v=b6219065e0"></script>
+</body>
+</html>

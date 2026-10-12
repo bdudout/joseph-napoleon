@@ -1,0 +1,102 @@
+{
+ "lignes_fr": [
+  "Je n'ai aucunes nouvelles de Votre Majesté depuis son départ de Paris ;",
+  "je n'ai aucune nouvelle directe de France depuis les lettres du Ministre de la",
+  "Guerre du cinq octobre. ¶ Je n'ai jamais reçu ni com-p-",
+  "-te [ni ?] rapport ni état de situation vraisemblable de l'armée du Nord de l'Espagne, quel[le]s qu'aient été",
+  "mes demandes réitérées à cet égard. J'ai",
+  "adressé à Votre Majesté impériale et au[x] Ministre de la Guerre à Paris des",
+  "quadruplicata de mes dépêches de Salamanque, mon dernier courrier ayant",
+  "été enlevé avec toute la correspondance près de Valladolid [.] ¶ Votre Majesté trouvera",
+  "ci-joint copie d'une dépêche de Monsieur le général Re-",
+  "-ille, qui m'a paru de nature à être",
+  "mise sous ses yeux. C'est la première pièce",
+  "de ce genre que je reçois ; elle m'éclaire",
+  "sur la position des provinces du Nord ; je sais bien que",
+  "elle n'était pas bonne, mais je ne la croyais pas aussi dé-",
+  "-plorable, et je ne pensais pas qu'elle exi-",
+  "-geât des sacrifices aussi grands que la concen-",
+  "-tration dont il est question. Je crois cependant à",
+  "la vérité du rapport de Monsieur le comte R-",
+  "-eille et à la droiture de ses intentions. Je con-",
+  "-çois qu'il faut trouver un remède, et voici ce",
+  "que je propose à Votre Majesté dans l'hypothèse",
+  "où la guerre avec la Russie continuerait et [q]ue Votre Majesté…"
+ ],
+ "corrections_transcription": {
+  "8:0": [
+   "1110",
+   "1113"
+  ],
+  "9:6": [
+   "1030",
+   "1063"
+  ],
+  "9:8": [
+   "690",
+   "693"
+  ],
+  "11:13": [
+   "960",
+   "963"
+  ],
+  "12:3": [
+   "713",
+   "718"
+  ],
+  "13:6": [
+   "605",
+   "635"
+  ],
+  "20:10": [
+   "1068",
+   "1066"
+  ],
+  "21:6": [
+   "460",
+   "463"
+  ]
+ },
+ "douteux": {
+  "559": {
+   "fr": "« Compagnie, s » dans la table ; lu « com- » (« compte ») par hypothèse",
+   "en": "“Compagnie, s” in the table; read “com-” (“compte”, account) as a hypothesis"
+  },
+  "851": {
+   "fr": "case cachée par une pliure de la table sur les deux photographies ; « ni » par hypothèse",
+   "en": "entry hidden by a fold of the table in both photographs; “ni” as a hypothesis"
+  },
+  "1051": {
+   "fr": "case cachée par une pliure ; « ité » imposé par « réitérées »",
+   "en": "entry hidden by a fold; “ité” required by “réitérées”"
+  },
+  "356": {
+   "fr": "la planche porte 356 (« préjudice ») ; le sens exige 656 (« quel ») : faute probable du chiffreur ou du copiste",
+   "en": "the plate reads 356 (“préjudice”); the sense requires 656 (“quel”): probable slip by the encoder or copyist"
+  },
+  "325": {
+   "fr": "la planche porte 325 (« paix ») ; 225 (« un point ») conviendrait : faute probable",
+   "en": "the plate reads 325 (“paix”); 225 (full stop) would fit: probable slip"
+  },
+  "495": {
+   "fr": "lu « car, t » dans la table ; le mot exige « cen »",
+   "en": "read “car, t” in the table; the word requires “cen”"
+  },
+  "320": {
+   "fr": "lu « C » dans la table ; « exigeât » attendrait « t »",
+   "en": "read “C” in the table; “exigeât” would need “t”"
+  },
+  "131": {
+   "fr": "« ue » : « [q]ue »",
+   "en": "“ue”: “[q]ue”"
+  },
+  "402": {
+   "fr": "« E » : terminaison de « mise »",
+   "en": "“E”: ending of “mise”"
+  },
+  "1086": {
+   "fr": "« sous » : lecture de la table à confirmer",
+   "en": "“sous”: table reading to be confirmed"
+  }
+ }
+}

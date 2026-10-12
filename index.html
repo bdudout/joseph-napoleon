@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>King Joseph's cipher letter · La lettre chiffrée du roi Joseph (1812)</title>
+<meta name="description" content="A cryptogram of December 1812, deciphered with the Great Cipher of 1812. English · Français">
+<link rel="alternate" hreflang="x-default" href="en/index.html">
+<link rel="alternate" hreflang="en" href="en/index.html">
+<link rel="alternate" hreflang="fr" href="fr/index.html">
+<script>
+  // Choix de la langue : 1) choix déjà fait sur le site, 2) langues du navigateur, 3) anglais par défaut.
+  // Ajouter ?choose à l'URL pour afficher le sélecteur sans redirection.
+  (function () {
+    if (/[?&]choose\b/.test(location.search)) return;
+    var OK = { en: 1, fr: 1 };
+    var go = function (l) { location.replace(l + '/index.html'); };
+    try { var saved = localStorage.getItem('jn-lang'); if (OK[saved]) return go(saved); } catch (e) {}
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+    for (var i = 0; i < langs.length; i++) {
+      var base = String(langs[i] || '').toLowerCase().split('-')[0];
+      if (base === 'fr' || base === 'en') return go(base);
+    }
+    go('en');
+  })();
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%239b2c1f'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='%23f7f3ea' font-family='serif'%3EJ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<main class="chooser">
+  <p class="big-num">1812</p>
+  <h1>King Joseph's cipher letter</h1>
+  <ul>
+    <li><a href="en/index.html" lang="en" data-lang="en"><img class="flag" src="assets/img/flags/gb.svg" width="20" height="15" alt=""> English</a></li>
+    <li><a href="fr/index.html" lang="fr" data-lang="fr"><img class="flag" src="assets/img/flags/fr.svg" width="20" height="15" alt=""> Français</a></li>
+  </ul>
+</main>
+<script>
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest('a[data-lang]');
+    if (a) { try { localStorage.setItem('jn-lang', a.dataset.lang); } catch (e) {} }
+  });
+</script>
+</body>
+</html>
