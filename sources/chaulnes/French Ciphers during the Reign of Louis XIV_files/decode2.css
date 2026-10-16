@@ -1,0 +1,125 @@
+body {
+  font-size:12pt;
+  line-height:17pt;
+  background-color:#FFFFFF;
+  margin: 0;
+  width: auto;
+}
+H1 {
+  margin: 0 0 1em;
+  padding: 1em 1em 0.5em;
+  background: #ffffff;
+  border-bottom: #dd0000 dotted 6px;
+  font-size: 20pt;
+  color: #dd0000;
+  text-align: left;
+  width: auto;
+}
+h2 {
+  margin: 2.5em 0em 1em;
+  padding: 0.2em 1em 0.2em;
+  border-style: solid;
+  border-width: 2px 0px 2px;
+  border-color: #dd0000;
+  background: #ff9999;
+  font-size:12pt;
+  color: #dd0000;
+  width: auto;
+}
+h3 {
+  margin: 1em 1em 0em;
+  padding: 0.2em;
+  font-size:12pt;
+  font-weight:bold;
+  color: #000000;
+  width: auto;
+}
+h4 {
+  margin: 1em 1em 0em;
+  padding: 0.2em;
+  font-size:10pt;
+  font-weight:bold;
+  color: #000000;
+  width: auto;
+}
+table {
+  margin: 1em 2em 1em;
+}
+td {
+  text-align: left;
+}
+.kakomi {
+  margin-left: 2em;
+  padding: 1em;
+  background-color: #ffff66;
+  line-height:14pt;
+  width: auto;
+}
+@media screen and (min-width: 40em) {
+  .kakomi{ width: 40em;}
+}
+.kakomi2 {
+  margin-left: 2em;
+  padding: 1em;
+  background-color: #33ffff;
+  width: auto;
+}
+@media screen and (min-width: 40em) {
+  .kakomi2{ width: 40em;}
+}
+.printed {
+  color: #663300;
+}
+.unprinted {
+  color: #330000;
+}
+.deciphered {
+  color: #0000ff;
+}
+.undeciphered {
+  color: #ff0000;
+}
+.modified {
+  color: #0000ff;
+}
+.highlight {
+  background-color: #ffff00;
+}
+.dubious {
+  background-color: #ff0000;
+}
+.note {
+  font-size: 8pt;
+  color: #663300;
+}
+p{ 
+  text-indent: 1.5em;
+  margin: 0em 1em 0em;
+  width: auto;
+}
+@media screen and (min-width: 40em) {
+	p{ width: 40em;}
+}
+
+ul{ 
+  margin: 0em 1em 0em;
+  width: auto;
+}
+@media screen and (min-width: 40em) {
+  ul{ width: 40em;}
+}
+
+
+
+p.question {
+        cursor: pointer;
+}
+p.question:hover {
+        text-decoration: underline;
+}
+p.answer {
+        display: none;
+        background: #ffff66;
+        margin-left: 2em;
+        padding: 10px;
+}
