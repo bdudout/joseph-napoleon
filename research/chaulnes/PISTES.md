@@ -37,3 +37,17 @@ Combinée à *appaise* (381 = se), la colonne de départ est c0 ∈ {2…8}.
 
 Les deux variantes de la colonne 0 sont départagées par le solveur (`solve.py --fixjson hypA.json / hypB.json`).
 Résultats : voir la section suivante quand ils seront disponibles.
+
+## 4. Résultats du solveur sur la vraie lettre (c0 = 2, 250 000 itérations, vocabulaire de 400 mots)
+
+| hypothèse fixée | codes fixés | score final |
+|---|---|---|
+| A : appaise + ne + séries b, c, p, qu, de, no | 24 | −1004 |
+| B : appaisera (381 = sera) + ne + séries b, c, s, de, no | 20 | −960 |
+| C : appaise + ne seulement (graine 1) | 7 | −643 |
+| C : idem (graine 2) | 7 | −623 |
+
+Toutes les sorties sont des suites de mots sans suite (« salade »), aucune lecture. Les hypothèses A et B coûtent plus de
+300 points par rapport à C : les séries de syllabes supposées (qu / s en colonne 0, b et c en colonne 2, de = 433) sont
+défavorisées. *appaise* et *ne* = 488 ne sont ni confirmés ni contredits. Les deux graines de C divergent : la recherche
+ne converge pas, comme sur les contrôles.
