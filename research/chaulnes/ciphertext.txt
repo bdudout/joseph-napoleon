@@ -1,0 +1,11 @@
+# Louis XIV to the duc de Chaulnes, Versailles 10 July 1690. Code groups verified against the five page images
+# (Klausis Krypto Kolumne / Traces Ecrites 2017). Underlined groups marked with _ ; small raised figures marked ^.
+# Corrections to the dealer transcription: 823 -> 523 (p.1 l.5); 458 -> 456 (p.2 "mandiez que" passage).
+[P1] diligences que vous avez faites pour | 201 459 170 523 172 381 433 201 10 508 141 140 527_ 523 172 309 433 386 306 403 201 203 403 30 142 | et | 309 433 27 509 102 433 22 306 180 204 201 | Evesques qui ont assisté à l'assemblée du clergé de 1682 | 513 32 97 446 396 150 491 77 170 180 481 77 107 12 32_ 51 22 180 | .
+[P2] | 479 446 23 150 488 409 22 170 | Il est bien raisonnable que la Cour de Rome demandant que lesd. evesques déclarent
+[P3] que vous m'avez écrit par votre lettre du 25e d'avril | 5 47 53 6 10 106 473 20 23 138 12 122 118 434 207 | , qui estoit de mettre après la profession de foy exprimée dans led. projet
+[P4] dont mesme vous me mandiez que | 65 23 89 456 493 507 524 180 325 | et que vous croyez
+[P5] et que vous croyez | 370 106 457 170 513 10 306 201 509 443 107 83 356 310 481 469 523 170 409 433 172 137 313_ 20 488 446 22 190 42 62 523 434 170 309 477 379 152 491 172 523 20 300 457 307 535 306 180 124 122 396 65 327 65 381 488 172 487 142 70 371 170 201 168 48_ 47 535_ 200 107 130 51 488 310 370 2^ 306 172 434 22 488 141 458 22 3^ 141 485 22 306 180 306 170 434 22 170 180 152 491 77 190 182 196 107 508 488 312 141 142 98 436 23 10 446 481 306 408 140 355 356 172 449 509 524 98 404 12 32_ 141 140 306_ 524 172 20 190 | ceux qui ont assisté à l'assemblée de 1682 et qui sont nommés aux archeveschés et eveschés | 2 47 49 3 12 381 509 102 433 170 | .
+[P6] comme vous avés jugé plus à propos jusqu'à présent de | 488 408 190 192 488 168 10 92 341 10 152 488 310 481 70 58 306 180 124 120 396 508 170 89 523 172 409 433 22 182 | vous devez d'autant moins changer de conduite dans l'estat présent des affaires que
+[P7] dans l'estat présent des affaires que | 58 469 170 89 314 172 383 22 50 10 306 439_ 98 23 302 201 488 521 170 306 404 180 483 207 | ne conviennent point à mes intérests
+[P8] les pressantes instances que vous avés faites | 456 170 379 101 30_ 22 306 180 138_ 52 300 96 22 190 12 122 118 434 | et préconiser au plutôt les éveschés indifféremment
