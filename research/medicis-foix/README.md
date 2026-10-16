@@ -15,3 +15,22 @@ mots-codes de la clé de 1565 que la clé de Beck laisse vides. Lecture obtenue,
 - 70 = *toute*, 82 = *ceulx*, 37 = *car* : à vérifier ; la ligne D0 reste obscure.
 
 À contrôler sur les images : RX, z, 3, 20, 37, 70.
+
+## Tests du 16 octobre 2026 (`med.py`, modèle par mots entraîné sur la prose FreEM 1540-1600)
+
+`med_targets.py SIGNE…` essaie ~300 valeurs (lettres, digrammes, mots fréquents) pour un signe à toutes ses occurrences
+et classe les valeurs par score de la lettre entière.
+
+- **Validation** (`med_loo.py`, `med_loo.txt`) : sur les 58 signes connus de 2 occurrences ou plus, valeur masquée puis
+  retrouvée au rang 1 dans 45 cas (48 dans le top 3). Fiable pour les signes-lettres, pas pour les mots-codes rares.
+- **Mots-codes de la clé de 1565** (`med_targets.txt`) : non confirmés par le texte seul (bien rang 10, tant 37, faict 63,
+  dict 63, toute 83, ceulx 108 sur ~300). Leur appui reste l'indépendance de la clé de 1565. 37 : *me* (rang 7) bien
+  meilleur que *car* (rang 214) ; la clé de 1565 donne les deux.
+- **B1** : `SWASH_2` = **g** (écart de 8,4 avec la 2e valeur) ; avec `CAP_D_BOWL` = *cc* (hypothèse) :
+  « avecques grande abondance de langai**g**e a**cc**ompaign[ée] de la dexterité de son esperit » ; la fin *-ée* est sous
+  la tache B1:23 et `M_SWASH`.
+- **D8** : « depuis le partement du dict de Mar‑i‑ss‑r‑i‑u‑e‑r‑e » : hypothèse **Mauvissière** (Michel de Castelnau,
+  envoyé en Angleterre 1562-1563), si `ZBAR` n'est pas toujours *r*.
+- Ouverts : 20 (*au* ? « auancemens »), `N_MONOGRAM`, ligne D0.
+
+Signes à vérifier sur les photos : `ZBAR`, `CAP_D_BOWL`, `M_SWASH`, `N_MONOGRAM`, 20, 37, fin de D8.
